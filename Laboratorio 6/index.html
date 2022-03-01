@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/Users/Andres/Desktop/Construcción de Software/TC2005B.401/Laboratorio 6/materialize/css/materialize.min.css"  media="screen,projection"/>
+    </head>
+    <body>
+
+        <nav class="red">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right">Laboratorio 6</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a class="modal-trigger" href="#modal1" id="carrito">Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class = "col s12">
+                <p class="green"> Ejercicio 1</p>
+                <div class="col l3 m4 s12"><label for="password">Escribe tu contraseña</label><input id="password" type="text"></div>
+                <div id="respuesta"></div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col s12">
+                <p class="blue"> Ejercicio 2</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l4 m6 s12 ">
+                <div class="card medium">
+                    <div class="card-image">
+                    <img src="data:image/jpeg;base64,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">
+                    </div>
+                    <div class="card-content">
+                    <p>Gorra azul</p>
+                    <p id="precio_gorra"></p>
+                    <a class="waves-effect waves-light btn" id="gorra_azul">Agregar a Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12 ">
+                <div class="card medium">
+                    <div class="card-image">
+                    <img src="https://grafos.pro/wp-content/uploads/2021/06/auritex-playera-negro-cuello-redondo-manga-corta-caballero-tex02-1-700x700-1.jpg">
+                    </div>
+                    <div class="card-content">
+                    <p>playera negra</p>
+                    <p id="precio_playera"></p>
+                    <a class="waves-effect waves-light btn" id="playera_negra">Agregar a Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12 ">
+                <div class="card medium">
+                    <div class="card-image">
+                    <img src="https://dsnegsjxz63ti.cloudfront.net/images/pg/m_3260a83c4ed2d07.jpg">
+                    </div>
+                    <div class="card-content">
+                    <p>pantalon gris</p>
+                    <p id="precio_pantalon"></p>
+                    <a class="waves-effect waves-light btn" id="pantalon_gris">Agregar a Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="/Users/Andres/Desktop/Construcción de Software/TC2005B.401/Laboratorio 6/materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="/Users/Andres/Desktop/Construcción de Software/TC2005B.401/Laboratorio 6/Lab4.js"></script>
+    </body>
+    <footer>
+        Visual Studio Code https://code.visualstudio.com/
+    </footer>
+</html>
