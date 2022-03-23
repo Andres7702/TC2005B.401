@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <title>Laboratorio</title> 
+    </head>
+    <body> 
+        <h1 id="principal">Nombres favoritos</h1> 
+        <br><br> 
+        <% for(let i in Nombres){ %>
+            <ul>
+                <li> <%= Nombres[i] %> </li>
+            </ul>
+        <% } %>
+        <br><br> 
+        <a href="/nombres/nuevo">Escribe tus nombres favoritos</a>
+    </body>
+</html>

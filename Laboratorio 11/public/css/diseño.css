@@ -1,0 +1,23 @@
+body{
+    background-color:#3c1bb1;
+}
+h1{
+    color:#e48f2f;
+    font-size:40px;
+}
+h3,li,p,ul{
+    color:#fff;
+    font-size:20px;
+    max-width:1200px;
+    margin-left:70px;
+}
+
+div{
+    color:rgb(61, 252, 4);
+    font-size:20px;
+    max-width:1200px;
+    margin-left:70px;
+}
+footer{
+    color:#e48f2f;
+}

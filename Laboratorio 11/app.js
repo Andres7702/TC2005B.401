@@ -1,10 +1,16 @@
 const express= require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
-const rutas = require('/Users/Andres/Desktop/Construcción de Software/TC2005B.401/Laboratorio 11/routes/rutas_nombres.js');
+
+const rutas = require('./routes/rutas_nombres.js');
 app.use('/nombres', rutas);
 
 //Middleware
