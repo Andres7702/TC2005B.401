@@ -2,22 +2,13 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 
+const nombrescontroller = require('../controllers/nombres_controller');
 
+router.get('/nuevo', nombrescontroller.agregar_get);
 
-const Nombres = ["Andres"];
+router.post('/nuevo', nombrescontroller.agregar_post);
 
-router.get('/nuevo', (request, response, next) => {
-    response.render('nuevo');
-});
-
-router.post('/nuevo', (request, response, next) => {
-        Nombres.push(request.body.nombre);
-        response.redirect('/nombres');
-});
-
-router.use('/', (request, response, next) => {
-    response.render('nombres',{Nombres: Nombres});
-});
+router.use('/', nombrescontroller.lista);
 
 
 module.exports = router; 

@@ -1,3 +1,5 @@
+<%- include('includes/head.ejs') %>
+
 <!DOCTYPE html>
  <html>
      <head> 
@@ -8,6 +10,7 @@
         <h2>Escribe aqui: </h2> 
         <form action="/nombres/nuevo" method="POST"> <label for="nombre">Nombre: </label> <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui..."><br><br><input type="submit" value="Enviar"></form>
         <br><br>
-        <a href="/nombres">Lista nombres favoritos</a>
     </body>
     </html>';
+
+<%- include('includes/foot.ejs') %>
